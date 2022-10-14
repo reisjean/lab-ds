@@ -6,7 +6,7 @@ module.exports = {
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-interactions"
+    "@storybook/addon-interactions" 
   ],
   "framework": "@storybook/react",
   "core": {
@@ -14,12 +14,5 @@ module.exports = {
   },
   "features": {
     "storyStoreV7": true
-  },
-  viteFinal: (config, { configType }) => {
-    if(configType === 'PRODUCTION') {
-      config.base = '/lab-ds/'
-    }
-
-    return config
   }
 }
